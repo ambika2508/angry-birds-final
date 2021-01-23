@@ -148,7 +148,7 @@ to be completed before moving to the next lines.
 A function which waits for some lines to be completed before jumping to the next line are known as Asyncronous functions.
 */
 async function getTime(){
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
+    var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata")
     var r = await response.json()
     var dt = r.datetime
     var h = dt.slice(11,13)
